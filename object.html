@@ -1,0 +1,128 @@
+<!----------------------------------------------------------------->
+<!--                                                             -->
+<!-- Project Private Archive                                     -->
+<!--                                                             -->
+<!----------------------------------------------------------------->
+<!-- Author: William Sevelin Nordenmark -->
+
+
+<!DOCTYPE html>
+<html lang="sv">
+
+  <!----------------------------------------------------------------->
+  <!-- Non-body Elements -->
+  <!----------------------------------------------------------------->
+  
+  <title>Almanack för året 1882</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="W3.css">
+  
+  <style>
+    .objectSlides {display:none}
+    .w3-left, .w3-right, .w3-badge {cursor:pointer}
+    .w3-badge {height:13px;width:13px;padding:0}
+    .background {
+        position:absolute;
+        top:0; bottom:0; left:0; right:0;
+        background-size:cover;
+        background-position:center;
+        background-image:url(Azalea_1906.jpg);
+        z-index:-2;
+        }
+    .parchment {
+        box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+        background-image:url('Parchment.jpg');
+        margin-left:auto;
+        margin-right:auto;
+        margin-bottom:auto;
+        margin-top:16px;
+        max-width:900px; 
+        border:2px solid RosyBrown;
+        position:relative;
+    }
+  </style>
+
+  <body>
+      
+    <div class="background"></div>
+    
+    <!--div class="w3-content w3-pale-yellow w3-card-4 w3-margin-top w3-margin-bottom" style="background-image:url('Parchment.jpg');max_width:900px; border:2px solid RosyBrown; overflow:hidden"-->
+    
+    <div class="parchment">
+    
+      <!----------------------------------------------------------------->
+      <!-- Slides Container -->
+      <!----------------------------------------------------------------->
+    
+      <div class="w3-card-4" style="position:relative;margin-left:auto; margin-right:auto; max-width:800px; background-color:black; border:2px solid RosyBrown; margin-top: 32px; margin-bottom: auto">
+        
+        <!-- Images -->
+        <img class="objectSlides w3-animate-opacity" src="Almanack3.jpg" style="width:100%">
+        <img class="objectSlides w3-animate-opacity" src="Almanack2.jpg" style="width:100%">
+        <img class="objectSlides w3-animate-opacity" src="Almanack1.jpg" style="width:100%">
+        
+        <!-- Badges and Arrows -->
+        <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+        
+          <!-- Arrows -->
+          <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+          <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+          
+          <!-- Badges -->
+          <span class="w3-badge slideBadge w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+          <span class="w3-badge slideBadge w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+          <span class="w3-badge slideBadge w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+          
+        </div>
+        
+      </div>
+      
+      <p style="margin-left:48px; margin-top:auto; margin-bottom:auto; font-size: 50px; font-family:'Requiem Display A'; color:maroon">
+        Almanack för året 1882
+      </p>
+      
+      <p style="margin-left:48px;margin-right:48px; margin-top:auto; font-size: 16; font-family:'Requiem Display A'">
+        Den här almanackan köpte jag på Röda korset den 26:e Mars 2024. Den och flera andra små almanackor
+        fångade mitt intresse då de låg inklämda mellan ett par större böcker i avdelningen för äldre böcker. Det visade sig vara enormt spännande
+        att läsa igenom almanackorna då vissa innehöll anteckningar från tidigare ägare samt reklam både på
+        böcker och lokala företag där almanackan såldes (Kristianstad).
+      </p>
+      <p style="margin-right:16px"
+    
+    </div>
+
+    <!----------------------------------------------------------------->
+    <!-- Slides Script -->
+    <!----------------------------------------------------------------->
+
+    <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function currentDiv(n) {
+      showDivs(slideIndex = n);
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("objectSlides");
+      var dots = document.getElementsByClassName("slideBadge");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" w3-white", "");
+      }
+      x[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " w3-white";
+    }
+    </script>
+
+  </body>
+</html>
