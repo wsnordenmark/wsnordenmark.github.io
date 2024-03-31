@@ -10,86 +10,156 @@
 <html lang="sv">
 
   <!----------------------------------------------------------------->
-  <!-- Non-body Elements -->
+  <!-- Head -->
   <!----------------------------------------------------------------->
-  
-  <title>Almanack för året 1882</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="W3.css">
-  
-  <style>
-    .objectSlides {display:none}
-    .w3-left, .w3-right, .w3-badge {cursor:pointer}
-    .w3-badge {height:13px;width:13px;padding:0}
-    .background {
-        position:absolute;
-        top:0; bottom:0; left:0; right:0;
-        background-size:cover;
-        background-position:center;
-        background-image:url(Azalea_1906.jpg);
-        z-index:-2;
-        }
-    .parchment {
-        box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
-        background-image:url('Parchment.jpg');
-        margin-left:auto;
-        margin-right:auto;
-        margin-bottom:auto;
-        margin-top:16px;
-        max-width:900px; 
-        border:2px solid RosyBrown;
-        position:relative;
-    }
-  </style>
+  <head>
+    <meta name="author" content="William Sevelin Nordenmark" />
+    <meta name="description" content="Welcome to my personal website. Come to expect blog posts and essays touching upon: 
+                                      Swedish and Japanese history, ethnology, literature, and folklore; chemistry, horse riding 
+                                      and other miscellanea. William Sevelin Nordenmark." />
+    <title>Almanack för året 1882</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="W3.css">
+    <link rel="stylesheet" href="main.css">
+    
+    <meta name="theme-color" content="#800000" />
+    <meta name="color-scheme" content="normal" />
+    <meta name="robots" content="index, follow" />
+    
+    <link rel="icon" href="wsn.png" type="image/icon type">
+    
+    <meta name="referrer" content="no-referrer" />
+  </head>
 
   <body>
       
     <div class="background"></div>
     
-    <!--div class="w3-content w3-pale-yellow w3-card-4 w3-margin-top w3-margin-bottom" style="background-image:url('Parchment.jpg');max_width:900px; border:2px solid RosyBrown; overflow:hidden"-->
+    <nav class="sidebar" style="float:left; position:sticky; top:0">
+      <h1 class="sidebar">A R K I V S Ö K</h1>
+      <div class="h_line"></div>
     
-    <div class="parchment">
+      <details open>
+        <summary><h2 class="sidebar">Gamla Böcker</h2></summary>
+          <h3 class="sidebar"><a href="#Almanack för året 1882">Almanack för året 1882</a></h3>
+          <h3 class="sidebar"><a href="#Almanack för året 1884">Almanack för året 1884</a></h3>
+      </details>
+      <details>
+        <summary><h2 class="sidebar">Andra Saker</h2></summary>
+      </details>
+    </nav>
     
-      <!----------------------------------------------------------------->
-      <!-- Slides Container -->
-      <!----------------------------------------------------------------->
-    
-      <div class="w3-card-4" style="position:relative;margin-left:auto; margin-right:auto; max-width:800px; background-color:black; border:2px solid RosyBrown; margin-top: 32px; margin-bottom: auto">
-        
-        <!-- Images -->
-        <img class="objectSlides w3-animate-opacity" src="Almanack3.jpg" style="width:100%">
-        <img class="objectSlides w3-animate-opacity" src="Almanack2.jpg" style="width:100%">
-        <img class="objectSlides w3-animate-opacity" src="Almanack1.jpg" style="width:100%">
-        
-        <!-- Badges and Arrows -->
-        <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-        
-          <!-- Arrows -->
-          <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-          <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+      <article id="Almanack för året 1882">
+      
+        <h2 class="entry">+ Almanack för året 1882</h2>
+      
+        <!----------------------------------------------------------------->
+        <!-- Slides Container -->
+        <!----------------------------------------------------------------->
+      
+        <div class="slidesContainer">
           
-          <!-- Badges -->
-          <span class="w3-badge slideBadge w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-          <span class="w3-badge slideBadge w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-          <span class="w3-badge slideBadge w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+          <!-- Images -->
+          <figure class="objectSlides">
+            <img class="w3-animate-opacity" src="Almanack3.jpg" style="width:100%">
+            <figcaption>One of the pages.</figcaption>
+          </figure>
+          
+          <figure class="objectSlides">
+            <img class="w3-animate-opacity" src="Almanack2.jpg" style="width:100%">
+            <figcaption>Photo of the front.</figcaption>
+          </figure>
+          
+          <figure class="objectSlides">
+            <img class="w3-animate-opacity" src="Almanack1.jpg" style="width:100%">
+            <figcaption>Photo of the back that is very large.</figcaption>
+          </figure>
+          
+          <!-- Badges and Arrows -->
+          <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+          
+            <!-- Arrows -->
+            <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+            <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+            
+            <!-- Badges -->
+            <span class="w3-badge slideBadge w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+            <span class="w3-badge slideBadge w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+            <span class="w3-badge slideBadge w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+            
+          </div>
           
         </div>
         
-      </div>
+        <h2 class="entry">En speciell händelse.</h2>
+        
+        <aside class="note"><p class="note"><em>This is an example of a note. The format is not quite decided upon.</em></p></aside>
+        
+        <p class="entry">
+          Den här almanackan köpte jag på Röda korset den 26:e Mars 2024. Den och flera andra små almanackor
+          fångade mitt intresse då de låg inklämda mellan ett par större böcker i avdelningen för äldre böcker. Det visade sig vara enormt spännande
+          att läsa igenom almanackorna då vissa innehöll anteckningar från tidigare ägare samt reklam både på böcker och lokala företag där almanackan såldes (Kristianstad).
+        </p>
+        
+        <p class="entry">
+          Här kommer ytterligare en lång paragraf som handlar om en del saker helt och hållet relaterade till böcker skrivna av August Strindberg
+          den kända författaren som började röka pipor i en fin sammetsrock redan innan han var tonåring och som skrev de ockulta dagböckerna
+          när han bodde i frankrike.
+        </p>
+        
+        <h3 class="entry">En vettig gubbe</h3>
+        
+        <p class="entry">
+          Därefter så händer någonting mer som måste skrivas. Jag kan däremot inte vara så hemskt direkt då det skulle kunna leda till att
+          jag blir avstängd eller till och med arresterad av säkerhetspolisen. Det finns faktiskt en väldigt vettig gubbe som ofta sitter
+          i mitten av nordstan.
+        </p>
+        
+        <h4 class="entry">
+          Publicerad: <time datetime="2024-03-28">28:e Mars 2024</time><br>
+          Senast redigerad: <time datetime="2024-03-29">29:e Mars 2024</time>
+        </h4>
+        
+      </article>
+
+     <article id="Almanack för året 1884">
       
-      <p style="margin-left:48px; margin-top:auto; margin-bottom:auto; font-size: 50px; font-family:'Requiem Display A'; color:maroon">
-        Almanack för året 1882
-      </p>
+        <h2 class="entry">
+          Almanack för året 1884
+        </h2>
       
-      <p style="margin-left:48px;margin-right:48px; margin-top:auto; font-size: 16; font-family:'Requiem Display A'">
-        Den här almanackan köpte jag på Röda korset den 26:e Mars 2024. Den och flera andra små almanackor
-        fångade mitt intresse då de låg inklämda mellan ett par större böcker i avdelningen för äldre böcker. Det visade sig vara enormt spännande
-        att läsa igenom almanackorna då vissa innehöll anteckningar från tidigare ägare samt reklam både på
-        böcker och lokala företag där almanackan såldes (Kristianstad).
-      </p>
-      <p style="margin-right:16px"
-    
-    </div>
+        <!----------------------------------------------------------------->
+        <!-- Slides Container -->
+        <!----------------------------------------------------------------->
+      
+        <div class="slidesContainer">
+          
+          <!-- Images -->
+          <figure>
+            <img class="w3-animate-opacity" src="Almanack2.jpg" style="width:100%">
+            <figcaption>The same image as before. It is however much more special this time.</figcaption>
+          </figure>
+          
+        </div>
+        
+        <p class="entry">
+          Det var en gång som var grusig som bara den. Vi höll då i buteljerna och skålade i Bacchi anda sedan
+          jag Kajsa-stina och björnen som dansade polska hade tagit oss hem från skeppsbron.
+        </p>
+        
+        <h4 class="entry">
+          Publicerad: <time datetime="2024-03-28">30:e Mars 2024</time><br>
+          Senast redigerad: <time datetime="2024-03-29">30:e Mars 2024</time>
+        </h4>
+        
+      </article>
+      
+      <footer>
+        <p class="entry" style="text-align:center;  margin-top: 8px; margin-bottom: 8px; color:maroon">
+          © Peter Tiger William Sevelin Nordenmark
+        </p>
+      </footer>
 
     <!----------------------------------------------------------------->
     <!-- Slides Script -->
