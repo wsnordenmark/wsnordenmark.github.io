@@ -5,42 +5,65 @@
 <!----------------------------------------------------------------->
 <!-- Author: William Sevelin Nordenmark -->
 
-
 <!DOCTYPE html>
 <html lang="sv">
 
   <!----------------------------------------------------------------->
-  <!-- Head -->
+  <!--                                                             -->
+  <!-- Head                                                        -->
+  <!--                                                             -->
   <!----------------------------------------------------------------->
+
   <head>
+    
+    <!-- Descriptive Information -->
     <meta name="author" content="William Sevelin Nordenmark" />
     <meta name="description" content="Welcome to my personal website. Come to expect blog posts and essays touching upon: 
                                       Swedish and Japanese history, ethnology, literature, and folklore; chemistry, horse riding 
                                       and other miscellanea. William Sevelin Nordenmark." />
+                                      
+    <!-- Title and Icon -->
     <title>Almanack för året 1882</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="W3.css">
+    <link rel="icon" href="wsn.png" type="image/icon type">
+    
+    <!-- Linked Files -->
+    <link rel="stylesheet" href="modern-normalize.css">
     <link rel="stylesheet" href="main.css">
     
+    <!-- Page Settinga -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#800000" />
     <meta name="color-scheme" content="normal" />
     <meta name="robots" content="index, follow" />
-    
-    <link rel="icon" href="wsn.png" type="image/icon type">
-    
     <meta name="referrer" content="no-referrer" />
+    
   </head>
 
+  <!----------------------------------------------------------------->
+  <!--                                                             -->
+  <!-- Body                                                        -->
+  <!--                                                             -->
+  <!----------------------------------------------------------------->
+
   <body>
-      
+    
+    <!----------------------------------------------------------------->
+    <!-- Background -->
+    <!----------------------------------------------------------------->
+    
     <div class="background"></div>
     
+    <!----------------------------------------------------------------->
+    <!-- Sidebar -->
+    <!----------------------------------------------------------------->
+      
     <nav class="sidebar" style="float:left; position:sticky; top:0">
       <h1 class="sidebar">A R K I V S Ö K</h1>
+      
       <div class="h_line"></div>
     
-      <details open>
+      <details>
         <summary><h2 class="sidebar">Gamla Böcker</h2></summary>
           <h3 class="sidebar"><a href="#Almanack för året 1882">Almanack för året 1882</a></h3>
           <h3 class="sidebar"><a href="#Almanack för året 1884">Almanack för året 1884</a></h3>
@@ -50,6 +73,10 @@
       </details>
     </nav>
     
+      <!----------------------------------------------------------------->
+      <!-- Article 1 -->
+      <!----------------------------------------------------------------->
+      
       <article id="Almanack för året 1882">
       
         <h2 class="entry">+ Almanack för året 1882</h2>
@@ -58,35 +85,36 @@
         <!-- Slides Container -->
         <!----------------------------------------------------------------->
       
-        <div class="slidesContainer">
+        <div class="image-frame slideshow">
           
           <!-- Images -->
-          <figure class="objectSlides">
-            <img class="w3-animate-opacity" src="Almanack3.jpg" style="width:100%">
+          <figure class="slideshow-slide">
+            <img class="animate-opacity" src="Almanack3.jpg" style="width:100%">
             <figcaption>One of the pages.</figcaption>
           </figure>
           
-          <figure class="objectSlides">
-            <img class="w3-animate-opacity" src="Almanack2.jpg" style="width:100%">
+          <figure class="slideshow-slide">
+            <img class="animate-opacity" src="Almanack2.jpg" style="width:100%">
             <figcaption>Photo of the front.</figcaption>
           </figure>
           
-          <figure class="objectSlides">
-            <img class="w3-animate-opacity" src="Almanack1.jpg" style="width:100%">
+          <figure class="slideshow-slide">
+            <img class="animate-opacity" src="Almanack1.jpg" style="width:100%">
             <figcaption>Photo of the back that is very large.</figcaption>
           </figure>
           
+
           <!-- Badges and Arrows -->
-          <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+          <div class="slideshow-elements large">
           
             <!-- Arrows -->
-            <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-            <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+            <div class="slideshow-arrow left">&#10094;</div>
+            <div class="slideshow-arrow right">&#10095;</div>
             
             <!-- Badges -->
-            <span class="w3-badge slideBadge w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-            <span class="w3-badge slideBadge w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-            <span class="w3-badge slideBadge w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+            <span class="slideshow-badge"></span>
+            <span class="slideshow-badge"></span>
+            <span class="slideshow-badge"></span>
             
           </div>
           
@@ -122,26 +150,66 @@
         </h4>
         
       </article>
-
-     <article id="Almanack för året 1884">
+     
+      <!----------------------------------------------------------------->
+      <!-- Article 2 -->
+      <!----------------------------------------------------------------->
       
-        <h2 class="entry">
-          Almanack för året 1884
-        </h2>
+      <article>
       
-        <!----------------------------------------------------------------->
-        <!-- Slides Container -->
-        <!----------------------------------------------------------------->
-      
-        <div class="slidesContainer">
-          
-          <!-- Images -->
-          <figure>
-            <img class="w3-animate-opacity" src="Almanack2.jpg" style="width:100%">
-            <figcaption>The same image as before. It is however much more special this time.</figcaption>
+        <h2 class="entry">Vanliga Paddor</h2>
+        
+        <div class="image-frame slideshow">
+        
+          <figure class="slideshow-slide">
+            <img class="animate-opacity" src="frog1.jpg" style="width:100%">
+            <figcaption>Closeup of two toads.</figcaption>
           </figure>
           
+          <figure class="slideshow-slide">
+            <img class="animate-opacity" src="frog2.jpg" style="width:100%">
+            <figcaption>Another wonderful closeup.</figcaption>
+          </figure>
+          
+          <figure class="slideshow-slide">
+            <img class="animate-opacity" src="frog3.jpg" style="width:100%">
+            <figcaption>Not so close shot of two toads.</figcaption>
+          </figure>
+        
+          <figure class="slideshow-slide">
+            <img class="animate-opacity" src="frog4.jpg" style="width:100%">
+            <figcaption>A lone creature in a pond.</figcaption>
+          </figure>
+          
+          <figure class="slideshow-slide">
+            <img class="animate-opacity" src="frog5.jpg" style="width:100%">
+            <figcaption>An ominous scene.</figcaption>
+          </figure>
+        
+          <div class="slideshow-elements large">
+          
+            <div class="slideshow-arrow left">&#10094;</div>
+            <div class="slideshow-arrow right">&#10095;</div>
+            
+            <span class="slideshow-badge"></span>
+            <span class="slideshow-badge"></span>
+            <span class="slideshow-badge"></span>
+            <span class="slideshow-badge"></span>
+            <span class="slideshow-badge"></span>
+          
+          </div>
+        
         </div>
+        
+        <h3 class="entry">A toady surprise</h3>
+        
+        <p class="entry"> 
+          Paddor. Paddor. Groddjur. Grodor. Väldigt fina djur. Stora ögon. Fina ljud.
+          Viga och akrobatiska, juvelitiska och afroamenitiska. Svåra att slå och goda att flå.
+          Mera man kan göra men icke vill.
+        </p>
+        
+        <h3 class="entry">Problematiken man stöter på nära bolsfötter</h2>
         
         <p class="entry">
           Det var en gång som var grusig som bara den. Vi höll då i buteljerna och skålade i Bacchi anda sedan
@@ -149,11 +217,15 @@
         </p>
         
         <h4 class="entry">
-          Publicerad: <time datetime="2024-03-28">30:e Mars 2024</time><br>
-          Senast redigerad: <time datetime="2024-03-29">30:e Mars 2024</time>
+          Publicerad: <time datetime="2024-04-02">2:a April 2024</time><br>
+          Senast redigerad: <time datetime="2024-04-02">2:a April 2024</time>
         </h4>
-        
+      
       </article>
+      
+      <!----------------------------------------------------------------->
+      <!-- Footer -->
+      <!----------------------------------------------------------------->
       
       <footer>
         <p class="entry" style="text-align:center;  margin-top: 8px; margin-bottom: 8px; color:maroon">
@@ -166,33 +238,57 @@
     <!----------------------------------------------------------------->
 
     <script>
-    var slideIndex = 1;
-    showDivs(slideIndex);
-
-    function plusDivs(n) {
-      showDivs(slideIndex += n);
-    }
-
-    function currentDiv(n) {
-      showDivs(slideIndex = n);
-    }
-
-    function showDivs(n) {
-      var i;
-      var x = document.getElementsByClassName("objectSlides");
-      var dots = document.getElementsByClassName("slideBadge");
-      if (n > x.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = x.length}
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";  
+    class Slideshow {
+      constructor(imgArr, dotArr) {
+        this.index = 1;
+        this.imgArr = imgArr;
+        this.dotArr = dotArr;
       }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" w3-white", "");
+      setIndex(n) {
+        this.index = n;
+        this.show();
       }
-      x[slideIndex-1].style.display = "block";  
-      dots[slideIndex-1].className += " w3-white";
+      incIndex(n) {
+        this.index += n;
+        this.show();
+      }
+      show() {
+        var i;
+        if (this.index > this.imgArr.length) {this.index =                  1;}
+        if (this.index <                  1) {this.index = this.imgArr.length;}
+        for (i = 0; i < this.imgArr.length; i++) {
+          this.imgArr[i].style.display = "none";
+        }
+        for (i = 0; i < this.dotArr.length; i++) {
+          if (this.dotArr[i].style.backgroundColor == "white") {this.dotArr[i].style.backgroundColor = "transparent"}
+        }
+        this.imgArr[this.index-1].style.display = "block";
+        this.dotArr[this.index-1].style.backgroundColor = "white";
+      }
     }
+    
+    const slideshowElemArr = document.getElementsByClassName("slideshow");
+    const slideshowArr = Array(slideshowElemArr.length);
+    for (let i = 0; i < slideshowArr.length; i++) {
+    
+      var slideElemArr = slideshowElemArr[i].getElementsByClassName("slideshow-slide");
+      var arrowElemArr = slideshowElemArr[i].getElementsByClassName("slideshow-arrow");
+      var badgeElemArr = slideshowElemArr[i].getElementsByClassName("slideshow-badge");
+    
+      slideshowArr[i] = new Slideshow(slideElemArr, badgeElemArr);
+      
+      arrowElemArr[0].onclick = function() {slideshowArr[i].incIndex(-1)}
+      arrowElemArr[1].onclick = function() {slideshowArr[i].incIndex(1)}
+      
+      for (let j = 0; j < badgeElemArr.length; j++) {
+        badgeElemArr[j].onclick = function() {slideshowArr[i].setIndex(j+1)}
+      }
+      
+      slideshowArr[i].show();
+    }
+
     </script>
 
   </body>
+
 </html>

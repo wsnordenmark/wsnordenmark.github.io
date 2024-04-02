@@ -1,6 +1,4 @@
 .objectSlides {display:none}
-.w3-left, .w3-right, .w3-badge {cursor:pointer}
-.w3-badge {height:13px;width:13px;padding:0}
 .background {
     position:fixed;
     top:0; bottom:0; left:0; right:0;
@@ -107,6 +105,8 @@ h2.sidebar {
     font-size: 24px;
     font-family:'Requiem Display A';
     color:maroon;
+    user-select:none;
+    cursor:pointer;
 }
 h3.sidebar {
     margin: auto 8px auto 56px;
@@ -137,7 +137,7 @@ p.note {
     font-size: 16;
     font-family:"Requiem Display A";
 }
-.slidesContainer {
+.image-frame {
     box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
     position:relative;
     margin-left:auto; 
@@ -181,3 +181,61 @@ figcaption {
     color:gray;
     font-style:italic;
 }
+.animate-opacity {
+  animation:opac 0.8s
+}@keyframes opac {from{opacity:0} to{opacity:1}}
+small {
+  color:maroon;
+}
+
+/*-----------------------------------------------*/
+/* Slideshow Specific*/
+/*-----------------------------------------------*/
+
+.slideshow-elements {
+    margin-top:16px!important;
+    margin-bottom:16px!important;
+    text-align:center!important;
+    display:inline-block;
+    width:100%;
+    padding:0.01em 16px;
+    position:absolute;
+    bottom:0;
+}
+
+.slideshow-arrow      {color:white!important; cursor:pointer; user-select:none;}
+.slideshow-arrow:hover{color:khaki!important;}
+
+.slideshow-badge {
+    color:white; 
+    background-color:transparent; 
+    display:inline-block; 
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc!important;
+    height:13px;
+    width:13px;
+    padding:0;
+    cursor:pointer;
+}
+.slideshow-badge:hover {background-color:white!important;}
+
+/*-----------------------------------------------*/
+/* Positioning */
+/*-----------------------------------------------*/
+
+.left  {float: left!important;}
+.right {float:right!important;}
+
+/*-----------------------------------------------*/
+/* Size of Text */
+/*-----------------------------------------------*/
+
+.large {font-size:18px!important;}
+
+
+h1,h2,h3,h4,h5,h6{font-weight:400;margin:10px 0}
+html,body{font-size:15px;line-height:1.5}
+
+
+
