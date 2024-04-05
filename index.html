@@ -18,7 +18,7 @@
     
     <!-- Descriptive Information -->
     <meta name="author" content="William Sevelin Nordenmark" />
-    <meta name="description" content="Welcome to my personal website. Come to expect blog posts and essays touching upon: 
+    <meta name="description" content="Come to expect blog posts and essays touching upon: 
                                       Swedish and Japanese history, ethnology, literature, and folklore; chemistry, horse riding 
                                       and other miscellanea. William Sevelin Nordenmark." />
                                       
@@ -64,10 +64,10 @@
       <div class="h_line"></div>
     
       <details>
-        <summary><h2 class="sidebar">Gamla Böcker</h2></summary>
-          <h3 class="sidebar"><a href="#Almanack för året 1882">Almanack för året 1882</a></h3>
-          <h3 class="sidebar"><a href="#Vanliga Paddor">Vanliga Paddor</a></h3>
-          <h3 class="sidebar"><a href="#Råa Rådjur">Råa Rådjur</a></h3>
+        <summary><h2 class="sidebar"><a class="local-link" href="#Gamla Böcker">Gamla Böcker</a></h2></summary>
+          <h3 class="sidebar"><a class="local-link" href="#Almanack för året 1882">Almanack för året 1882</a></h3>
+          <h3 class="sidebar"><a class="local-link" href="#Vanliga Paddor">Vanliga Paddor</a></h3>
+          <h3 class="sidebar"><a class="local-link" href="#Råa Rådjur">Råa Rådjur</a></h3>
       </details>
       <details>
         <summary><h2 class="sidebar">Andra Saker</h2></summary>
@@ -78,7 +78,7 @@
       <!-- Article 1 -->
       <!----------------------------------------------------------------->
       
-      <article id="Almanack för året 1882">
+      <article id="Almanack för året 1882" class="gamla-böcker">
       
         <h2 class="entry">Almanack för året 1882</h2>
       
@@ -156,7 +156,7 @@
       <!-- Article 2 -->
       <!----------------------------------------------------------------->
       
-      <article id="Vanliga Paddor">
+      <article id="Vanliga Paddor" class="gamla-böcker">
       
         <h2 class="entry">Vanliga Paddor</h2>
         
@@ -228,7 +228,7 @@
       <!-- Article 3 -->
       <!----------------------------------------------------------------->
       
-      <article id="Råa Rådjur">
+      <article id="Råa Rådjur" class="gamla-böcker">
       
         <h2 class="entry">Råa Rådjur</h2>
         
@@ -338,6 +338,33 @@
       
       slideshowArr[i].show();
     }
+
+    var localLinks = document.getElementsByClassName("local-link");
+    for (let i = 0; i < localLinks.length; i++) {
+      localLinks[i].onclick = function() {select(localLinks[i].innerHTML)}
+    }
+
+    /* Function that changes what shows up. */
+    
+    function select(str) {
+      console.log(str);
+      var articles = document.getElementsByTagName("article");
+      for (let i = 0; i < articles.length; i++) {
+        articles[i].style.display = "none";
+      }
+      if (document.getElementById(str) == null) {
+      
+        str2 = str.toLowerCase().replace(' ', '-');
+        classArticles = document.getElementsByClassName(str2);
+        for (let i = 0; i < classArticles.length; i++) {
+          classArticles[i].style.display = "block";
+        }
+        return;
+      }
+      document.getElementById(str).style.display = "block";
+    }
+    
+    select(window.decodeURI((window.location.href.split('#'))[1]));
 
     </script>
 
