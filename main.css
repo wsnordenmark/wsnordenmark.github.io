@@ -12,9 +12,10 @@ div.h_line {
     display:block;
     margin-bottom:12px;
     box-sizing:border-box;
-    margin-left:5%;
-    margin-right:23%;
+    margin-left:1.5em;
+    margin-right:1.5em;
     border-bottom: 1px solid black;
+    padding-top:2em;
 }
 h2.sidebar::before {
   content:"+";
@@ -68,6 +69,7 @@ article {
 }
 nav.sidebar {
     position:sticky; 
+    position: -webkit-sticky; /* Safari */
     top:0;
     box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
     background-image:url('Parchment.jpg');
@@ -99,10 +101,11 @@ h2.sidebar {
 }
 
 .menu_toggle {
+  padding-top:23px;
   display:none;
   height:42px;
   width:42px;
-  margin: 6.5% 6.5% 0% auto;
+  margin: 0 2em 0% auto;
 }
 
 .sidebar-content {
@@ -240,11 +243,6 @@ p.note {
 .right-header {
     float: right;
 }
-div.sticky {
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
-} 
 figure {
     margin:0;
     padding:0;
