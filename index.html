@@ -61,17 +61,25 @@
     <nav class="sidebar">
       <h1 class="sidebar">A R K I V S Ö K</h1>
       
+      <div class="menu_toggle">
+        <div class="short_line"></div>
+        <div class="short_line"></div>
+        <div class="short_line"></div>
+      </div>
+      
       <div class="h_line"></div>
     
-      <details>
-        <summary><h2 class="sidebar"><a class="local-link" href="#Gamla Böcker">Gamla Böcker</a></h2></summary>
-          <h3 class="sidebar"><a class="local-link" href="#Almanack för året 1882">Almanack för året 1882</a></h3>
-          <h3 class="sidebar"><a class="local-link" href="#Vanliga Paddor">Vanliga Paddor</a></h3>
-          <h3 class="sidebar"><a class="local-link" href="#Råa Rådjur">Råa Rådjur</a></h3>
-      </details>
-      <details>
-        <summary><h2 class="sidebar">Andra Saker</h2></summary>
-      </details>
+      <div class="sidebar-content">
+        <details>
+          <summary><h2 class="sidebar"><a class="local-link" href="#Gamla Böcker">Gamla Böcker</a></h2></summary>
+            <h3 class="sidebar"><a class="local-link" href="#Almanack för året 1882">Almanack för året 1882</a></h3>
+            <h3 class="sidebar"><a class="local-link" href="#Vanliga Paddor">Vanliga Paddor</a></h3>
+            <h3 class="sidebar"><a class="local-link" href="#Råa Rådjur">Råa Rådjur</a></h3>
+        </details>
+        <details>
+          <summary><h2 class="sidebar">Andra Saker</h2></summary>
+        </details>
+      </div>
     </nav>
     
       <!----------------------------------------------------------------->
@@ -359,12 +367,28 @@
         for (let i = 0; i < classArticles.length; i++) {
           classArticles[i].style.display = "block";
         }
+        window.scrollTo(0, 0);
         return;
       }
       document.getElementById(str).style.display = "block";
     }
     
     select(window.decodeURI((window.location.href.split('#'))[1]));
+    
+    function toggleNav() {
+      sidebarContent = document.getElementsByClassName("sidebar-content")[0];
+      sidebar = document.getElementsByTagName("nav")[0];
+      if (sidebarContent.style.display == "block") {
+        sidebarContent.style.display = "none";
+        sidebar.style.paddingBottom = "auto";
+      } else {
+        sidebarContent.style.display = "block";
+        sidebar.style.paddingBottom = "100%";
+      }
+    }
+    
+    menuToggles = document.getElementsByClassName("menu_toggle");
+    menuToggles[0].onclick = function() {toggleNav()};
 
     </script>
 

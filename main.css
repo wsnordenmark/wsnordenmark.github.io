@@ -50,6 +50,32 @@ nav.sidebar {
     max-width:300px;
     border:2px solid RosyBrown;
     float:left;
+    overflow:hidden;
+}
+h1.sidebar {
+    margin-left:25px;
+    margin-right:auto;
+    float:left;
+    font-size: 36px;
+    font-family:'Requiem Display A';
+    color:maroon;
+}
+
+.menu_toggle {
+  display:none;
+  float:right;
+  margin: 6.5% 6.5% 0% 5%;
+}
+
+.sidebar-content {
+  display:block;
+  float:left;
+}
+
+.short_line {
+    margin-bottom:25%;
+    width:2.75em;
+    border-bottom: 2.4px solid maroon;
 }
 @media (max-width: 1475px) {
   article {display:block;}
@@ -81,11 +107,14 @@ nav.sidebar {
     float:none;
     z-index:1;
   }
-  details {
+  .sidebar-content {
     display:none;
   }
   .h_line {
     display:none;
+  }
+  .menu_toggle {
+    display:block;
   }
 }
 footer {
@@ -137,13 +166,6 @@ p.entry {
     margin-bottom:16px;
     font-size: 16; 
     font-family:'Requiem Display A'
-}
-h1.sidebar {
-    margin-left:25px;
-    margin-right:auto;
-    font-size: 36px;
-    font-family:'Requiem Display A';
-    color:maroon;
 }
 h2.sidebar {
     margin: auto 8px auto 48px;
@@ -286,7 +308,8 @@ small {
 
 
 h1,h2,h3,h4,h5,h6{font-weight:400;margin:10px 0}
-html,body{font-size:15px;line-height:1.5}
+html,body{font-size:15px;line-height:1.5;}
+
 
 
 
