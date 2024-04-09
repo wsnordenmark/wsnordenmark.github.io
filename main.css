@@ -25,7 +25,7 @@ a {
     top:0; bottom:0; left:0; right:0;
     background-size:cover;
     background-position: top left;
-    background-image:url(konst.jpg);
+    background-image:url(konst.JPG);
     z-index:-2;
     background-attachment:scroll, local;
     display:flex;
