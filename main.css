@@ -1,5 +1,9 @@
 html {
   scroll-behavior:smooth;
+  height:100%;
+}
+body {
+  min-height:100%;
 }
 details > summary {
   list-style: none;
@@ -15,7 +19,6 @@ div.h_line {
     margin-left:1.5em;
     margin-right:1.5em;
     border-bottom: 1px solid black;
-    padding-top:2em;
 }
 h2.sidebar::before {
   content:"+";
@@ -37,6 +40,10 @@ details[open] h2.sidebar::before {
     background-image:url(Azalea_1906.jpg);
     z-index:-2;
     background-attachment:scroll, local;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:center;
     }
 aside.note {
     box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
@@ -68,9 +75,8 @@ article {
     float:center;
 }
 nav.sidebar {
-    position:sticky; 
+    position:fixed; 
     position: -webkit-sticky; /* Safari */
-    top:0;
     box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
     background-image:url('Parchment.jpg');
     margin: 0px auto 0px 2%;
@@ -82,11 +88,11 @@ nav.sidebar {
     overflow:hidden;
     box-sizing: border-box;
     display:flex;
+    flex-direction:column;
+    align-self:flex-start;
 }
 h1.sidebar {
     margin-left:25px;
-    margin-right:auto;
-    float:left;
     font-size: 36px;
     font-family:'Requiem Display A';
     color:maroon;
@@ -117,7 +123,7 @@ h2.sidebar {
     width:2.75em;
     border-bottom: 2.4px solid maroon;
 }
-@media (max-width: 1475px) {
+@media (max-width: 1080px) {
   article {display:block;}
   aside.note {
     float:none;
@@ -145,6 +151,9 @@ h2.sidebar {
     float:none;
     z-index:1;
   }
+  h1.sidebar {
+    float:left;
+  }
   h2.sidebar {
     font-size: 36px;
     margin-left:5%;
@@ -160,15 +169,15 @@ h2.sidebar {
   .menu_toggle {
     display:block;
   }
-  div.h_line {display:none;}
+  div.h_line {display:none;padding-top:2em;}
 }
 footer {
     box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
     background-image:url('Parchment.jpg');
     margin: 16px auto 16px auto;
-    max-width:500px; 
+    max-width:600px; 
     border:2px solid RosyBrown;
-    position:relative;
+    clear:both;
 }
 h1.entry {
     margin-top:16px; 
@@ -267,6 +276,12 @@ figcaption {
 }@keyframes opac {from{opacity:0} to{opacity:1}}
 small {
   color:maroon;
+  margin-top:auto; 
+  margin-bottom:16px;
+  font-size: 16; 
+  font-family:'Requiem Display A';
+  padding:16px;
+  line-height:1.5;
 }
 
 /*-----------------------------------------------*/
