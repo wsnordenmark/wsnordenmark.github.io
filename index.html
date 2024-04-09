@@ -378,12 +378,15 @@
     function toggleNav() {
       sidebarContent = document.getElementsByClassName("sidebar-content")[0];
       sidebar = document.getElementsByTagName("nav")[0];
+      hLine = document.getElementsByClassName("h_line")[0];
       if (sidebarContent.style.display == "block") {
         sidebarContent.style.display = "none";
-        sidebar.style.paddingBottom = "auto";
+        sidebar.style.paddingBottom = "0";
+        hLine.style.display = "none";
       } else {
         sidebarContent.style.display = "block";
-        sidebar.style.paddingBottom = "100%";
+        sidebar.style.paddingBottom = "0.5em";
+        hLine.style.display = "block";
       }
     }
     
